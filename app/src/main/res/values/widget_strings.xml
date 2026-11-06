@@ -1,0 +1,4 @@
+<resources>
+    <string name="alarm_widget_desc">Prochain réveil et actions rapides</string>
+    <string name="nap_widget_desc">Lancer une sieste de 20 ou 30 minutes</string>
+</resources>
