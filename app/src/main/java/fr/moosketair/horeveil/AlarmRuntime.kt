@@ -37,7 +37,7 @@ class AlarmReceiver : BroadcastReceiver() {
                     when(key) {
                         "nap" -> s.copy(napAt=0)
                         "snooze" -> s.copy(snoozeAt=0)
-                        else -> s.copy(fired=(s.fired + key).takeLast(250).toSet())
+                        else -> s.copy(fired=(s.fired + key).toList().takeLast(250).toSet())
                     }
                 }
                 val ring = Intent(context,RingingService::class.java)
